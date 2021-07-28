@@ -82,6 +82,9 @@ namespace TestValidation
                 Assert.AreEqual(expected, ex.message);
             }
         }
+        /// <summary>
+        /// UC2-Returns the totlfare for multiple rides
+        /// </summary>
         [TestMethod]
         public void Return_Multiple_Rides_TotalFare()
         {
@@ -92,7 +95,9 @@ namespace TestValidation
             InvoiceSummary expected = invoice.CalculateFare(rides);
             Assert.AreEqual(summary.totalFare, expected.totalFare);
         }
-
+        /// <summary>
+        /// UC3-Returns the average ride
+        /// </summary>
         [TestMethod]
         public void Return_Multiple_Rides_AverageFare()
         {
@@ -103,7 +108,9 @@ namespace TestValidation
             InvoiceSummary expected = invoice.CalculateFare(rides);
             Assert.AreEqual(summary.avgFare, expected.avgFare);
         }
-
+      /// <summary>
+     /// UC3-returns the number of rides
+     /// </summary>
         [TestMethod]
         public void Return_Multiple_Rides_NumofRides()
         {
